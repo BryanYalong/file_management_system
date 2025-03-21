@@ -1,0 +1,182 @@
+/* Background Image - Medium Size in Upper Left */
+body {
+    background-image: url('spcc_campus.png'); /* Ensure the correct path */
+    background-size: 15% auto; /* Medium size (30% width, auto height) */
+    background-position: top left; /* Position it in the upper left */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-attachment: fixed; /* Keeps it fixed when scrolling */
+    background-color: white; /* Rest of the background remains white */
+}
+
+/* Dark Mode (Ensures the image remains) */
+body.dark {
+    background-color: #040404;
+    background-image: url('spcc_campus.png');
+    background-size: 30% auto;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* Center the File Management System */
+.container {
+    max-width: 800px;
+    margin: auto; /* Centers horizontally */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;      
+    transform: translate(-50%, -50%); /* Centers vertically & horizontally */
+}
+
+
+
+/* Position Logout Button at Bottom Left */
+.logout-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 80%; /* Adjust width to align with other buttons */
+}
+
+
+.logout-btn {
+    background-color: #d9534f;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+    display: block;
+    text-align: center;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}
+
+
+
+/* Thumbnail Images */
+.thumbnail {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Search Form */
+.search-container {
+    display: flex;
+    bottom: 50px;
+    left: 570px;
+    align-items: center;
+    justify-content: flex-end; /* Move search bar to the right */
+    width: 25%; /* Ensure it spans the full width of the container */
+}
+
+.search-files {
+    font-size: 14px;
+    padding: 6px 10px;
+    height: 30px;
+    max-width: 150px; /* Make the search bar shorter */
+}
+
+
+.form-control {
+    font-size: 14px;
+    padding: 6px 10px;
+    height: 30px;
+    max-width: 200px; /* Make the search bar shorter */
+}
+
+
+
+/* Ensure the spinner is centered properly */
+
+.spinner-wrapper {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    margin-top: 40px; /* Adjust spacing under "Welcome..." */
+}
+
+
+/* Keep existing spinner animation */
+.spinner div {
+    width: 10px;
+    height: 10px;
+    background-color: #00d9ff;
+    border-radius: 50%;
+    animation: spinner 1.25s infinite backwards;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg) translateY(-200%);
+    }
+    60%, 100% {
+        transform: rotate(360deg) translateY(-200%);
+    }
+}
+
+.spinner div:nth-child(1) { animation-delay: 0.15s; }
+.spinner div:nth-child(2) { animation-delay: 0.3s; }
+.spinner div:nth-child(3) { animation-delay: 0.45s; }
+.spinner div:nth-child(4) { animation-delay: 0.6s; }
+.spinner div:nth-child(5) { animation-delay: 0.75s; }
+
+.loading-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.loading-container img {
+    margin-bottom: 10px; /* Add spacing below the logo */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Choose Files */
+.file-input {
+    padding: 2px 5px; /* Smaller padding */
+    font-size: 12\px; /* Smaller text */
+    width: auto; /* Adjust width automatically */
+    height: 30px; /* Adjust height */
+    display: inline-block;
+    border: 1px solid #ccc; /* Optional: Adds a subtle border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+
+
+/* UPLOAD FILES BUTTON */
+.upload-btn {
+    background-color: #007bff; /* Default Bootstrap Blue */
+    color: white; /* White text */
+    padding: 8px 16px; /* Adjust padding */
+    font-size: 10px; /* Adjust text size */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded edges */
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.upload-btn:hover {
+    background-color: #022f5e; /* Darker blue on hover */
+}
+
+
+
+
+
+
